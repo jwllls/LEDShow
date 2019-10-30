@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title"/>
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/icv_setting"
+        style="@style/commom_item_view_style"
+        app:title="@string/common_setting" />
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/icv_about"
+        style="@style/commom_item_view_style"
+        app:title="@string/about" />
+
+</LinearLayout>

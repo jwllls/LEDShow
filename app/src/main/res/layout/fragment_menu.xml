@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_file"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_pic_text"
+                android:text="图文组合" />
+
+            <Button
+                android:id="@+id/btn_pic"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_pic"
+                android:text="图片" />
+
+
+            <Button
+                android:id="@+id/btn_lib"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_res_lib"
+                android:text="@string/res_lib" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_my_led"
+                android:gravity="center"
+                android:text="连接"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/ll"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_text"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_text"
+                android:text="字幕" />
+
+
+            <Button
+                android:id="@+id/btn_gif"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_anim"
+                android:text="动画" />
+
+
+            <Button
+                android:id="@+id/btn_draw"
+                style="@style/btn_main"
+                android:drawableTop="@drawable/icon_graffiti"
+                android:text="涂鸦" />
+
+
+            <Button
+                android:id="@+id/btn_show"
+                style="@style/btn_main"
+                android:layout_marginTop="40dp"
+                android:drawableTop="@drawable/icon_show_list"
+                android:text="@string/show_list"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_title" />
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/item_toolbar" android:id="@+id/toolbar"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reScan"
+        android:text="@string/reScan" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rv_bt"
+        android:layout_above="@id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroke"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+<!--    <include layout="@layout/layout_send" />-->
+</RelativeLayout>

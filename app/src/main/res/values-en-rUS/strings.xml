@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LEDShow</string>
+    <string name="reScan">scan</string>
+    <string name="connect">connect</string>
+    <string name="file">file</string>
+    <string name="picture">picture</string>
+    <string name="graffiti">graffiti</string>
+    <string name="caption">caption</string>
+    <string name="show_list">SHOW</string>
+    <string name="res_lib">RESOURCE</string>
+    <string name="bt_connect">bluetooth connect</string>
+
+
+    <string name="color_black">black</string>
+    <string name="color_white">white</string>
+    <string name="color_green">green</string>
+    <string name="color_blue">blue</string>
+    <string name="color_red">red</string>
+
+
+    <string name="delete">delete</string>
+    <string name="edit" >edit</string>
+    <string name="send">send</string>
+    <string name="menu">menu</string>
+    <string name="sendlist">show</string>
+    <string name="mine">me</string>
+    <string name="start_scan">start scan</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="tips">提示</string>
+    <string name="not_support_bluetooth">该设备不支持蓝牙</string>
+    <string name="about">关于</string>
+    <string name="common_setting">通用设置</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="fast_send">快捷投送</string>
+    <string name="setting">设置</string>
+
+
+</resources>

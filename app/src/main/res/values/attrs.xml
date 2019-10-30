@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="settingItem">
+<!--        <attr name="itemHeigh" format="dimension"/>//item高度-->
+<!--        <attr name="text" format="string"/>//左TextView的内容-->
+<!--        <attr name="textSize" format="dimension"/>//左TextView的字体大小-->
+<!--        <attr name="textColor" format="color"/>//左TextView的字体颜色-->
+<!--        <attr name="textMargeLeft" format="dimension"/>//左TextView的左边距-->
+<!--        <attr name="image" format="reference"/>//跳转下一页图标-->
+<!--        <attr name="imageHeigh" format="dimension"/>//跳转下一页图标高度-->
+<!--        <attr name="imageWidht" format="dimension"/>//跳转下一页图标宽度-->
+<!--        <attr name="imageMarginLeft" format="dimension"/>//跳转下一页图标左边距-->
+<!--        <attr name="imageMarginRight"  format="dimension"/>//跳转下一页图标右边距-->
+<!--        <attr name="isShowRedPoint" format="boolean"/>//是否显示小红点-->
+<!--        <attr name="textRight" format="dimension"/>//右TextView内容-->
+        <attr name="leftText" format="string"/>
+
+        <attr name="leftIcon" format="reference"/>
+        <attr name="leftIconSize" format="dimension"/>
+
+        <attr name="rightIcon" format="reference"/>
+        <attr name="rightIconSize" format="dimension"/>
+
+        <attr name="titleColor" format="color"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="title" format="string"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.PictureActivity">
+
+
+    <EditText
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/tv_plate"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_edit_txt"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textSize="30dp" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/common_btn_style"
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel" />
+
+        <Button
+            style="@style/common_btn_style"
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="save" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_btn"
+        android:layout_below="@id/editText">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_style"
+                style="@style/commom_item_view_style"
+                app:title="字体" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_size"
+                style="@style/commom_item_view_style"
+                app:title="大小" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_colorful"
+                style="@style/commom_item_view_style"
+                app:title="炫彩字体" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_anim"
+                style="@style/commom_item_view_style"
+                app:title="动画方式" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_speed"
+                style="@style/commom_item_view_style"
+                app:title="移动速度" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_text_color"
+                style="@style/commom_item_view_style"
+                app:title="颜色" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_stay_time"
+                style="@style/commom_item_view_style"
+                app:title="停留时间" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_alia"
+                style="@style/commom_item_view_style"
+                app:title="对齐方式" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_outline"
+                style="@style/commom_item_view_style"
+                app:title="环绕边框" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_couplet"
+                style="@style/commom_item_view_style"
+                app:title="对联显示" />
+
+            <com.led.ledshow.view.ItemCommomView
+                android:id="@+id/tv_bg_color"
+                style="@style/commom_item_view_style"
+                app:title="背景" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_plate"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_plate"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="40dp" />
+
+
+    <include layout="@layout/item_title"/>
+
+
+</RelativeLayout>

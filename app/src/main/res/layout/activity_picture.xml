@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditActivity">
+
+
+    <Button
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic"
+        android:layout_marginTop="20dp"
+        android:text="从相册中选" />
+
+    <Button
+        android:id="@+id/btn_send"
+        style="@style/common_btn_style"
+        android:layout_alignParentBottom="true"
+        android:text="发送" />
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop" />
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/tv_anim"
+        style="@style/commom_item_view_style"
+        android:layout_below="@id/tv_stay_time"
+        app:title="动画方式" />
+
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/tv_outline"
+        style="@style/commom_item_view_style"
+        android:layout_below="@id/tv_anim"
+        app:title="环绕边框" />
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/tv_stay_time"
+        style="@style/commom_item_view_style"
+        android:layout_below="@id/btn_select"
+        app:title="停留时间" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/item_toolbar" />
+</RelativeLayout>

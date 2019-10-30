@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".activity.LayoutActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_top_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/icon_top_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/btn_bottom_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/icon_bottom_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_top_text"
+        app:layout_constraintTop_toTopOf="@+id/btn_top_text" />
+
+    <ImageButton
+        android:id="@+id/btn_three_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/icon_three_text"
+        app:layout_constraintStart_toStartOf="@+id/btn_top_text"
+        app:layout_constraintTop_toBottomOf="@+id/btn_top_text" />
+
+    <ImageButton
+        android:id="@+id/btn_four_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="88dp"
+        android:background="@drawable/icon_four_text"
+        app:layout_constraintEnd_toEndOf="@+id/btn_bottom_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_three_text"
+        app:layout_constraintTop_toTopOf="@+id/btn_three_text" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/item_toolbar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

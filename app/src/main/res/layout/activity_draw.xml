@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/palette"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/undo" />
+
+        <ImageView
+            android:id="@+id/redo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/redo" />
+
+        <ImageView
+            android:id="@+id/pen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/pen" />
+
+        <ImageView
+            android:id="@+id/eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/eraser" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/clear" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_menu"
+        android:orientation="vertical">
+
+        <com.led.ledshow.view.ItemCommomView
+            android:id="@+id/tv_bg_colro"
+            style="@style/commom_item_view_style"
+            app:title="画布颜色" />
+
+        <com.led.ledshow.view.ItemCommomView
+            android:id="@+id/tv_pen_color"
+            style="@style/commom_item_view_style"
+            app:title="画笔颜色" />
+
+        <com.led.ledshow.view.ItemCommomView
+            android:id="@+id/tv_pen_size"
+            style="@style/commom_item_view_style"
+            app:title="画笔粗细" />
+
+    </LinearLayout>
+
+    <com.led.ledshow.view.PaletteView
+        android:id="@+id/palette"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:background="#ffff" />
+
+    <include layout="@layout/item_title" />
+
+
+</RelativeLayout>

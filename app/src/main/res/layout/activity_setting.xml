@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <include layout="@layout/item_title"/>
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/icv_clean_cache"
+        style="@style/commom_item_view_style"
+        app:title="@string/clean_cache" />
+
+    <com.led.ledshow.view.ItemCommomView
+        android:id="@+id/icv_fast_send"
+        style="@style/commom_item_view_style"
+        app:title="@string/fast_send" />
+
+</LinearLayout>
